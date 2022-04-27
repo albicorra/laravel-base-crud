@@ -1,0 +1,33 @@
+main{
+    background-color: #1d1d1d;
+    
+
+    .container-card{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px;
+        width: 1200px;
+        margin: 0 auto;
+        gap: 100px;
+
+        .wrapper-card{
+            width: 45%;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .title{
+                color: #3282F9;
+                font-size: 18px;
+            }
+    
+            .image-comics{
+                width: 200px;
+            }
+        }
+    }
+
+}
