@@ -17,6 +17,8 @@
                 </div>
     
             @endforeach
+
+            <a class="create" href="{{ route('comics.create') }}">Create</a>
         </div>
     </main>
 @endsection
