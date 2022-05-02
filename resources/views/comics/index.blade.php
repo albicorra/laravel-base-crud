@@ -13,6 +13,7 @@
                         <li class="subtitle">{{$comic['series']}}</li>
 
                         <a href="{{ route('comics.show', $comic->id) }}">Visualizza</a>
+                        <a href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
                     </ul>
                 </div>
     
