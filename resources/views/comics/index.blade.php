@@ -11,9 +11,20 @@
                         <li class="title">{{$comic['title']}}</li>
                         <li class="subtitle">{{$comic['price']}}$</li>
                         <li class="subtitle">{{$comic['series']}}</li>
+                        <li>
+                            <a href="{{ route('comics.show', $comic->id) }}">Visualizza</a>
+                            <a href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
+                        </li>
+                        <li>
+                            <form action="{{route('comics.destroy', [ 'comic' => $comic->id ])}}" method="post">
+                                @csrf
+                                @method('DELETE')
 
-                        <a href="{{ route('comics.show', $comic->id) }}">Visualizza</a>
-                        <a href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
+                                <button type="submit">
+                                    Elimina elemento
+                                </button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
     

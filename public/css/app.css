@@ -72,6 +72,10 @@ main .container-card {
   gap: 100px;
 }
 
+main .container-card .create {
+  color: #fff;
+}
+
 main .container-card .wrapper-card {
   width: 45%;
   background: white;
