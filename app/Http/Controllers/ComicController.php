@@ -44,7 +44,7 @@ class ComicController extends Controller
             'thumb' => 'required | url',
             'price' => 'required | numeric',
             'series' => 'required | max:50',
-            'sale_data' => 'required | date',
+            'sale_data' => 'nullable',
             'type' => 'required | max:50',
         ]);
 
@@ -104,7 +104,7 @@ class ComicController extends Controller
             'thumb' => 'required | url',
             'price' => 'required | numeric',
             'series' => 'required | max:50',
-            'sale_data' => 'required | date',
+            'sale_data' => 'required ',
             'type' => 'required | max:50',
         ]);
 
